@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christian & Cristiano</title>
+
+  <!-- Ícones (Font Awesome) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+  <!-- MENU LATERAL -->
+  <aside class="side-menu" id="sideMenu">
+    <div class="side-menu-header">
+      <img src="./assets/Logo ChC 2024 BRANCO.png" alt="Christian & Cristiano">
+      <button class="close-btn" onclick="toggleMenu()">✕</button>
+    </div>
+
+    <nav class="side-menu-nav">
+      <a href="#">INÍCIO</a>
+      <a href="#">AGENDA</a>
+      <a href="#">VÍDEOS</a>
+      <a href="#">OUÇA</a>
+      <a href="#">MÚSICAS</a>
+      <a href="#">REDE SOCIAL</a>
+      <a href="#">CONTATO</a>
+    </nav>
+  </aside>
+
+  <!-- OVERLAY -->
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <button class="menu-btn" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="logo">
+      <img src="./assets/Logo ChC 2024 BRANCO.png" alt="Christian & Cristiano">
+    </div>
+
+    <div class="social-icons">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-tiktok"></i>
+      <i class="fab fa-x-twitter"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-youtube"></i>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+</html>
