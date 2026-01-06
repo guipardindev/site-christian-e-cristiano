@@ -59,31 +59,50 @@
     </div>
   </header>
   
-  <div class="slider">
-    <div class="slides">
+  <div class="main-page">
+    <div class="slider">
+      <div class="slides">
 
-      <input type="radio" name="radio-btn" id="radio1">
-      <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
 
-      <div class="slide first">
-        <img src="./assets/9.jpg">
+        <div class="slide first">
+          <img src="./assets/9.jpg">
+        </div>
+        <div class="slide">
+          <img src="./assets/8.jpg">
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+        </div>
+
       </div>
-      <div class="slide">
-        <img src="./assets/8.jpg">
-      </div>
 
-      <div class="navigation-auto">
-        <div class="auto-btn1"></div>
-        <div class="auto-btn2"></div>
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
       </div>
 
     </div>
 
-    <div class="manual-navigation">
-      <label for="radio1" class="manual-btn"></label>
-      <label for="radio2" class="manual-btn"></label>
-    </div>
+    <div class="agenda-section">
+      <div class="agenda-container">
 
+        <div class="agenda-icon">
+          <i class="fa-solid fa-calendar-days"></i>
+        </div>
+
+        <h2 class="agenda-title">AGENDA</h2>
+
+        <p class="agenda-empty">
+          Nenhuma agenda no momento!
+        </p>
+
+      </div>
+    </div>
+    
   </div>
 
   <script src="script.js"></script>
