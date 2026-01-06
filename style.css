@@ -270,3 +270,55 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.watch-section {
+  background: #1f232b;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+
+  padding-left: 150px; 
+}
+
+.watch-media {
+  position: relative;
+  width: 100%;
+  max-width: calc(100% - 20px); /* respeita seu padding lateral */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.watch-thumbnail,
+.watch-video {
+  position: absolute;
+  inset: 0;
+}
+
+.watch-thumbnail {
+  z-index: 2;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.watch-media.playing .watch-thumbnail {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.watch-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.watch-video {
+  z-index: 1;
+}
+
+.watch-video iframe {
+  width: 100%;
+  height: 100%;
+}
