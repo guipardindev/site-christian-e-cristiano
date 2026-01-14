@@ -450,6 +450,7 @@ body {
 
 .music-section {
   background-color: #1f232b;
+  z-index: 3;
 }
 
 .music-container {
@@ -615,4 +616,46 @@ body {
 .platform:hover {
   opacity: 0.8;
   transform: scale(1.05);
+}
+
+.social-section {
+  z-index: 2;
+  background: #2b313a;
+  padding: 80px 8%;
+  position: relative;
+}
+
+.social-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  gap: 30px;
+}
+
+.social-icons-header {
+  margin-bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
+}
+
+.social-icons-header i {
+  font-size: 30px;
+  cursor: pointer;
+
+  background-color: white;
+  color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.social-header h2 {
+  color: white;
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 74px;
+  letter-spacing: 8px;
+  margin-bottom: 40px;
 }
