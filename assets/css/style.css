@@ -12,6 +12,10 @@ body {
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 /* NAVBAR */
 .navbar {
   position: absolute;
@@ -28,7 +32,6 @@ body {
 
   z-index: 1000;
 }
-
 
 .menu-btn {
   background: none;
@@ -54,6 +57,27 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 30px 40px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-btn {
+    font-size: 26px;
+  }
+
+  .logo img {
+    height: 80px;
+  }
+
+  .social-icons {
+    column-gap: 8px;
+  }
+}
 
 /* MENU LATERAL */
 .side-menu {
@@ -224,6 +248,21 @@ body {
   background-color: #FFF;
 }
 
+@media (max-width: 768px) {
+  .slider {
+    height: 60vh;
+  }
+
+  .slides {
+    height: 100%;
+  }
+
+  .slide img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
 /* AGENDA */
 .agenda-section {
   padding: 120px 0;
@@ -263,6 +302,12 @@ body {
 .agenda-empty {
   font-size: 16px;
   color: #cfd3da;
+}
+
+@media (max-width: 1024px) {
+  .agenda-title {
+    font-size: 52px;
+  }
 }
 
 .main-page {
@@ -390,6 +435,37 @@ body {
   opacity: 0.9;
 }
 
+@media (max-width: 1024px) {
+  .watch-section {
+    padding-left: 0;
+    padding-bottom: 60px;
+  }
+
+  .watch-info {
+    width: 96%;
+    margin-top: -60px;
+    padding: 120px 30px 40px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .watch-title {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .watch-btn {
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 15px;
+  
+    margin-top: 12px;
+  }
+}
+
 .listen-section {
   position: relative;
 
@@ -446,6 +522,35 @@ body {
 .spotify-card {
   width: 100%;
   max-width: 1150px;
+}
+
+@media (max-width: 1024px) {
+
+  .listen-section {
+    margin-top: -180px;
+  }
+
+  .listen-background {
+    position: absolute;
+    z-index: 0;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .listen-title {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .spotify-wrapper {
+    padding: 180px 0px;
+  }
+
+  .spotify-card {
+    min-width: 450px;
+    width: 100%;
+  }
 }
 
 .music-section {
@@ -618,6 +723,16 @@ body {
   transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+  .music-platforms {
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    padding: 28px 30px;
+  }
+}
+
+
 .social-section {
   z-index: 1;
   background: #2b313a;
@@ -661,12 +776,33 @@ body {
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  .social-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-header h2 {
+    font-size: 82px;
+    margin-bottom: 20px;
+  }
+
+  .social-icons-header {
+    margin-bottom: 100px;
+  }
+
+  .social-icons-header i {
+    font-size: 30px;
+  }
+}
+
+
 .booking-section {
-  background-color: #2b313a;
+  background-color: #1f232b;
   width: 100%;
   padding: 0;
   z-index: 2;
-  padding-top: 100px;
+  padding-top: 25px;
 }
 
 .booking-container {
@@ -744,6 +880,29 @@ body {
   border: 1px solid white;
   padding: 5px 12px;
   border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-img {
+    height: 300px;
+  }
+
+  .booking-content {
+    padding: 60px 30px;
+  }
+
+  .booking-block h3 {
+    font-size: 52px;
+    margin-bottom: 10px;
+  }
+
+  .booking-btn {
+    margin-top: 60px;
+  }
 }
 
 section {
