@@ -57,3 +57,22 @@ let swiperCards = new Swiper(".card-content", {
     },
   },
 });
+
+document.querySelectorAll('.side-menu-nav a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute('href'));
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+
+    // Fecha o menu após clicar
+    document.getElementById('sideMenu').classList.remove('active');
+    document.querySelector('.overlay').classList.remove('active');
+  });
+});
