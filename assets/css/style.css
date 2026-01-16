@@ -58,13 +58,16 @@ html, body {
   column-gap: 28px;
 }
 
-.social-icons i {
+.social-icons a i {
   font-size: 36px;
+  text-decoration: none;
+  color: #fff;
+
   cursor: pointer;
   transition: 0.5s;
 }
 
-.social-icons i:hover {
+.social-icons a i:hover {
   opacity: 0.8;
   transform: scale(1.2);
 }
@@ -90,7 +93,7 @@ html, body {
     column-gap: 8px;
   }
 
-  .social-icons i {
+  .social-icons a i {
     font-size: 28px;
   }
 }
@@ -816,7 +819,7 @@ html, body {
   column-gap: 28px;
 }
 
-.social-icons-header i {
+.social-icons-header a i {
   font-size: 30px;
   cursor: pointer;
 
@@ -827,7 +830,7 @@ html, body {
   transition: 0.5s;
 }
 
-.social-icons-header i:hover {
+.social-icons-header a i:hover {
   opacity: 0.8;
   transform: scale(1.05);
 }
