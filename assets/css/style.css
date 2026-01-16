@@ -686,6 +686,17 @@ html, body {
   background-color: #fff;
 }
 
+@media (max-width: 768px) {
+  .card-content {
+    max-width: 320px;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
 .music-platforms {
   margin-bottom: 150px;
   width: 90%;
