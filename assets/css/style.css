@@ -6,7 +6,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: #ffffff;
+  background: #1f232b;
   color: #fff;
   margin: 0;
   padding: 0;
@@ -303,6 +303,154 @@ html, body {
   .slide img {
     object-fit: cover;
     height: 100%;
+  }
+}
+
+.bio-section {
+  padding: 120px 0 60px;
+  background: #1f232b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.bio-icon {
+  font-size: 26px;
+  color: #e10600;
+}
+
+.bio-title {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 72px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #ffffff;
+}
+
+.bio-wrapper {
+  display: flex;
+  align-items:flex-start;
+  justify-content: center;
+  flex-direction: row;
+
+  padding: 60px 60px 0;
+  gap: 40px;
+}
+
+.bio-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  padding: 40px;
+  background-color: #2b313a;
+  text-align: justify;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
+  position: relative;
+  border-radius: 30px;
+}
+
+.bio-card-content {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bio-card-content::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(transparent, #2b313a);
+}
+
+.bio-card-content h3 {
+  font-family: 'Special Gothic Expanded One', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+
+  text-align: center;
+
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.bio-card-content h3::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 40px;
+  bottom: 4px;
+  border-radius: 100px;
+}
+
+.bio-card-content p {
+  text-align: left;
+}
+
+.read-btn {
+  border: none;
+  padding: 10px;
+  border-radius: 2px;
+  margin-top: 15px;
+  background-color: #e10600;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.read-btn:hover {
+  background-color: transparent;
+  color: #aaa;
+  transition: all 0.2s ease-in-out;
+}
+
+.bio-card.active .bio-card-content {
+  height: auto;
+}
+
+.bio-card.active .bio-card-content p {
+  margin-bottom: 20px;
+}
+
+.bio-card.active .bio-card-content::before {
+  visibility: hidden;
+}
+
+@media (max-width: 1024px) {
+  .bio-title{
+    font-size: 36px;
+  }
+
+  .bio-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 20%;
+  }
+
+  .bio-card {
+    padding: 30px;
+
+    width: 120%;
+    height: 100%;
+    border-radius: 30px;
   }
 }
 

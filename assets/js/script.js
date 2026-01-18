@@ -76,3 +76,20 @@ document.querySelectorAll('.side-menu-nav a').forEach(link => {
     document.querySelector('.overlay').classList.remove('active');
   });
 });
+
+var buttons = document.querySelectorAll('.read-btn');
+
+buttons.forEach(function(button) {
+  button.addEventListener('click', function () {
+
+    var card = this.closest('.bio-card');
+    card.classList.toggle('active');
+
+    if (card.classList.contains('active')) {
+      this.textContent = 'Leia Menos';
+    } else {
+      this.textContent = 'Leia Mais...';
+    }
+
+  });
+});
