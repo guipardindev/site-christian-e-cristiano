@@ -396,7 +396,6 @@ html, body {
 .watch-media.playing .watch-thumbnail {
   display: none;
   opacity: 1;
-  pointer-events: none;
 }
 
 .watch-thumbnail img {
