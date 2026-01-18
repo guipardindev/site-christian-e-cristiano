@@ -75,7 +75,7 @@ html, body {
 @media (max-width: 1024px) {
   .navbar {
     padding: 30px 100px;
-    height: 10%;
+    height: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
