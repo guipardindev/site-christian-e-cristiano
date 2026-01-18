@@ -812,6 +812,7 @@ html, body {
   background: #2a2f36;
   border-radius: 16px;
   overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.389);
 }
 
 .card-image {
