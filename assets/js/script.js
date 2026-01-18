@@ -20,16 +20,13 @@ function nextImage() {
 
 };
 
-const media = document.querySelector('.watch-media');
-const thumb = document.getElementById('thumb');
-const video = document.getElementById('video');
+const thumb = document.getElementById("thumb");
+const media = document.querySelector(".watch-media");
+const iframe = document.getElementById("video");
 
-thumb.addEventListener('click', () => {
-  media.classList.add('playing');
-
-  if (!video.src.includes('autoplay')) {
-    video.src += '?autoplay=1';
-  }
+thumb.addEventListener("click", () => {
+  media.classList.add("playing");
+  iframe.src = "https://www.youtube.com/embed/2ar0sp7qRYA?autoplay=1&rel=0";
 });
 
 let swiperCards = new Swiper(".card-content", {
